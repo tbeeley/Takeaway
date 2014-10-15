@@ -10,8 +10,8 @@ class Order
 		@items << item
 	end
 
-	# def total_cost
-	# 	price_array = items.each {|item| sum += item.cost  }
-	# end
+	def total_cost
+		items.inject(0) { |sum, item| sum + item.cost }
+	end
 
 end
