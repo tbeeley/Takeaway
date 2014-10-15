@@ -19,7 +19,8 @@ class User
 		end
 	end
 
-
-
+	def make_order(order)
+		orders << order
+	end
 
 end

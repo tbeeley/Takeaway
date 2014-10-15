@@ -2,10 +2,12 @@ require 'user'
 
 describe User do
 
+	let(:user) { User.new("Thomas", "07841289922") }
+	let(:bad_user) { User.new("Thomas", "07841289922345")}
+	let(:order) { Order.new}
+
 	context 'upon creation' do
 
-		let(:user) { User.new("Thomas", "07841289922") }
-		let(:bad_user) { User.new("Thomas", "07841289922345")}
 
 		it 'should have a name' do
 			expect(user.name).to eq "Thomas"
@@ -25,12 +27,13 @@ describe User do
 
 	end
 
-	# context 'of an evening' do
+	context 'of an evening' do
 
-	# 	it 'should be able to make an order' do
+		it 'should be able to make an order' do
+			user.make_order(order)
+			expect(user.orders).to eq [order]
+		end
 
-	# 	end
-
-	# end
+	end
 
 end
