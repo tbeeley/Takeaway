@@ -1,10 +1,10 @@
 class Item
 
-	def initialize(dish)
+	def initialize(dish, quantity)
 		@dish = dish
-		# @quantity = quantity
+		@quantity = quantity
 	end
 
-	attr_accessor :dish
+	attr_accessor :dish, :quantity
 
 end
