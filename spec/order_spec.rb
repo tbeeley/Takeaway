@@ -11,11 +11,20 @@ describe Order do
 
 	end
 
-	# context 'when ordering' do
+	context 'when ordering' do
 
-	# 	it 'should be able to add items' do
+		let(:order) { Order.new }
+		let(:item)	{ double :item }
 
-	# 	end
-	# end
+		it 'should be able to add items' do
+			expect(order.items.count).to eq 0
+			order.add_item(item)
+			expect(order.items.count).to eq 1
+		end
+
+		# it 'should know the current cost' do
+		# 	expect(order.total_cost).to eq 20
+		# end
+	end
 
 end
