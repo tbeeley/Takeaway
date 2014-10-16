@@ -3,7 +3,7 @@ Takeaway
 
 [![Code Climate](https://codeclimate.com/github/tbeeley/Takeaway/badges/gpa.svg)](https://codeclimate.com/github/tbeeley/Takeaway)
 
-![Picture](./assets/takeaway.png)
+![Picture](./assets/pizza.png)
 
 ##Objectives
 
@@ -16,14 +16,14 @@ Write a short program for a takeaway service, where the user can choose a select
 
 #How to run it
 
-git clone https://github.com/tbeeley/Takeaway
-cd Takeaway
-bundle
-irb
-require './files.rb'
+	* git clone https://github.com/tbeeley/Takeaway
+	* cd Takeaway
+	* bundle
+	* irb 
+	* require './files.rb'
 
 #How to run the tests
 
-cd Takeaway
-bundle
-rspec
+	* cd Takeaway
+	* bundle
+	* rspec
