@@ -14,4 +14,8 @@ class Order
 		items.inject(0) { |sum, item| sum + item.cost }
 	end
 
+	def time_of
+		TIme.now
+	end
+
 end

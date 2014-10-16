@@ -29,7 +29,7 @@ describe User do
 
 	context 'of an evening' do
 
-		it 'should be able to make an order' do
+		it 'should be able to make an order from a restaurant' do
 			user.make_order(order)
 			expect(user.orders).to eq [order]
 		end

@@ -7,4 +7,8 @@ class Dish
 
 	attr_accessor :name, :price
 
+	def description
+		"#{name.capitalize}, £#{price}.00"
+	end
+
 end
