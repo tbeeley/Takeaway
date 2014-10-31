@@ -17,9 +17,4 @@ class Restaurant
 		menu.collect { |dish| dish.description }
 	end
 
-	def take_order_from(user, order)
-		"Hi #{user.name}, thanks for your order. It came to £#{order. total_cost}.00. It will be delivered by #{order.time_of.hour + 1}:#{order.time_of.min}"
-		#Send text to user.
-	end
-
 end

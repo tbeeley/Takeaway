@@ -46,11 +46,6 @@ describe Restaurant do
 			expect(restaurant.list_menu).to eq ["Margherita, £10.00"]
 		end
 
-		it 'should be able to take order from client' do
-			expect(restaurant.take_order_from(thomas, order)).to eq "Hi Thomas, thanks for your order. It came to £20.00. It will be delivered by #{Time.now.hour + 1}:#{Time.now.min}"
-		end
-
-
 	end
 
 end
